@@ -24,14 +24,15 @@
   ],
   "license": "{{ license }}",
   "unpkg": "lib/{{ name }}.js",
-  "dependencies": {
-    "vue": "^2.4.4"
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
   ],
+  "dependencies": {
+    "vue": "^2.4.4",
+    "classnames": "^2.2.5"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.26.0",
