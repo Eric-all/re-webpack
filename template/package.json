@@ -1,0 +1,62 @@
+{
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "version": "1.0.0",
+  "author": "{{ author }}",
+  "main": "lib/rate.js",
+  "files": [
+    "lib",
+    "build",
+    "example",
+    "src"
+  ],
+  "scripts": {
+    "build": "rm -rf ./lib && webpack --config ./build/webpack.config.js --progress --hide-modules",
+    "demo:dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --config ./build/webpack.example.dev.conf.js",
+    "demo:build": "rm -rf ./example/dist && cross-env NODE_ENV=production webpack --config ./build/webpack.example.prod.conf.js",
+    "demo:prepublish": "rm -rf ./gh-pages && cross-env NODE_ENV=prepublish webpack --config ./build/webpack.example.prod.conf.js",
+    "deploy": "bash ./build/gh-pages.sh"
+  },
+  "keywords": [
+    "vue",
+    "rate",
+    "components"
+  ],
+  "license": "{{ license }}",
+  "unpkg": "lib/rate.js",
+  "dependencies": {
+    "vue": "^2.4.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-component": "^0.9.1",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.4",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-webpack-plugin": "^2.30.1",
+    {{#less}}
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    {{/less}}
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.8",
+    "vue-demonstration": "^1.0.4",
+    "vue-loader": "^13.0.5",
+    "vue-style-loader": "^3.0.1",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+    "webpack-hot-middleware": "^2.18.0",
+    "webpack-merge": "^4.1.0"
+  }
+}
