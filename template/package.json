@@ -3,7 +3,7 @@
   "description": "{{ description }}",
   "version": "1.0.0",
   "author": "{{ author }}",
-  "main": "lib/rate.js",
+  "main": "lib/{{ name }}.js",
   "files": [
     "lib",
     "build",
@@ -19,11 +19,11 @@
   },
   "keywords": [
     "vue",
-    "rate",
+    "{{ name }}",
     "components"
   ],
   "license": "{{ license }}",
-  "unpkg": "lib/rate.js",
+  "unpkg": "lib/{{ name }}.js",
   "dependencies": {
     "vue": "^2.4.4"
   },
@@ -55,7 +55,7 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^2.9.1",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
   }
