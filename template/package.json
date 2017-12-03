@@ -17,12 +17,19 @@
     "demo:prepublish": "rm -rf ./gh-pages && cross-env NODE_ENV=prepublish webpack --config ./build/webpack.example.prod.conf.js",
     "deploy": "bash ./build/gh-pages.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Eric-all/{{ name }}.git"
+  },
   "keywords": [
     "vue",
     "{{ name }}",
     "components"
   ],
   "license": "{{ license }}",
+  "bugs": {
+    "url": "https://github.com/Eric-all/re-{{ name }}/issues"
+  },
   "unpkg": "lib/{{ name }}.js",
   "browserslist": [
     "> 1%",
