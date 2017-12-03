@@ -51,7 +51,6 @@
     {{/less}}
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.8",
-    "vue-demonstration": "^1.0.4",
     "vue-loader": "^13.0.5",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.4",
