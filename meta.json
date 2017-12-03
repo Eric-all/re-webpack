@@ -24,6 +24,11 @@
             "type": "confirm",
             "message": "Use less?",
             "default": true
+        },
+        "gitPage": {
+            "type": "string",
+            "label": "GitPage",
+            "default": "https://github.com/Eric-all/"
         }
     },
     "completeMessage": "{{#inPlace}}To get started:\n\n  npm install\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev{{/inPlace}}"
