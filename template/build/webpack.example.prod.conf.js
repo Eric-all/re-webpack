@@ -28,7 +28,7 @@ module.exports = merge(baseWebpackConfig, {
   devtool: '#source-map',
   output: {
     path: path.resolve(__dirname, '..', `${isProduction ? './example/dist' : 'gh-pages'}`),
-    publicPath: isProduction ? '/' : '/rate',
+    publicPath: isProduction ? '/' : './',
     filename: 'js/[name].[chunkhash].js'
   },
   plugins: [
