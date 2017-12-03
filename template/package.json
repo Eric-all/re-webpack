@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Eric-all/{{ name }}.git"
+    "url": "git@github.com:Eric-all/re-{{ name }}.git"
   },
   "keywords": [
     "vue",
